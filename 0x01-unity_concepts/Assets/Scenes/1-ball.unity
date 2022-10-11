@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 292732950}
   - component: {fileID: 292732949}
   m_Layer: 0
-  m_Name: 0-floor
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 2024315586}
   - component: {fileID: 2024315585}
   m_Layer: 0
-  m_Name: 1-ball
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
