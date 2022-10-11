@@ -1,0 +1,4 @@
+Materials/*.mat.meta
+Prefabs/Ball.prefab.meta
+Physic\ Materials/bounc.physicMaterial.meta
+Scenes/*.unity.meta
