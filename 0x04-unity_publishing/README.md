@@ -1,0 +1,1 @@
+This is the publishing process of a project developed and polished in Unity.
