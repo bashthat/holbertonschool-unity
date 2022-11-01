@@ -6001,6 +6001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinFlag
       objectReference: {fileID: 0}
+    - target: {fileID: 5819159419583303788, guid: 0e3c478e610262b4db86b8b17c948d48, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e3c478e610262b4db86b8b17c948d48, type: 3}
 --- !u!1001 &6921096583358444805
