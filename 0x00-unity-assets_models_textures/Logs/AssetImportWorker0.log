@@ -312,3 +312,43 @@ Received Import Request.
   path: Assets/Textures/Screenshot 2022-11-01 183200.png
   artifactKey: Guid(1d0781c1c96574d45a21577cc2388403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Textures/Screenshot 2022-11-01 183200.png using Guid(1d0781c1c96574d45a21577cc2388403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b65d3d84851d3a0cb9dce3b0860e6b1') in 0.103554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1303.263456 seconds.
+  path: Assets/Materials/Flag.mat
+  artifactKey: Guid(fff24c6b2355fbd48ab0eb2e609e7091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flag.mat using Guid(fff24c6b2355fbd48ab0eb2e609e7091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa79a9237fc7560bd67039f25f078fe') in 0.080611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 261.827637 seconds.
+  path: Assets/Models/Tools
+  artifactKey: Guid(8b593a2cee991cf41bb0c7a59aded25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tools using Guid(8b593a2cee991cf41bb0c7a59aded25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b80bc626f73f68903c23695f32c69a8') in 0.019136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.451095 seconds.
+  path: Assets/Nature pack extended/naturePack_078.obj
+  artifactKey: Guid(9ecbf57df6fb0944293a3b91f91f3723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature pack extended/naturePack_078.obj using Guid(9ecbf57df6fb0944293a3b91f91f3723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7262c10ced143529c01d5380211be35') in 0.164866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Nature pack extended/naturePack_080.obj
+  artifactKey: Guid(c7a59bf400668ca49b2d9ecc3a0771e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature pack extended/naturePack_080.obj using Guid(c7a59bf400668ca49b2d9ecc3a0771e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200799c22c3d51ac461b6340568a55f8') in 0.065046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Nature pack extended/naturePack_flat_006.obj
+  artifactKey: Guid(f48f1a27c7f82ce4d8fcc66f66945006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature pack extended/naturePack_flat_006.obj using Guid(f48f1a27c7f82ce4d8fcc66f66945006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f101018fe147f0fa5bf6b2f7d766a17') in 0.151292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Nature pack extended/naturePack_flat_005.obj
+  artifactKey: Guid(8cbfa08be247abf409f09a70468aa6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature pack extended/naturePack_flat_005.obj using Guid(8cbfa08be247abf409f09a70468aa6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3a17c1b97d5561cc8f7ac69068e0ff') in 0.149415 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
