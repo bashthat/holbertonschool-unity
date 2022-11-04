@@ -42,8 +42,8 @@ public class Player : MonoBehaviour
     public float speedSmoothTime = 0.1f;
     float speedSmoothVelocity;
 
-    private float velocityY;
-
+    public float velocityY;
+    
     private Vector3 Respawn;
 
     void Start()
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
     }
     void Death()
     {
-        if(GameObject.Find("Player").transform.position.y < -10)
+        if(GameObject.Find("Player").transform.position.y < -100)
         {
             GameObject.Find("Player").transform.position = new Vector3(0, 0, 0);
 
@@ -150,7 +150,13 @@ public class Player : MonoBehaviour
 
         if (_controller.isGrounded)
         {
-            velocityY = 0;
+            velocityY = -2;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                float jumpVelocity = Mathf.Sqrt(-2 * _gravityPlatformer * jumpHeight);
+                velocityY = jumpVelocity;
+            }
+
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
