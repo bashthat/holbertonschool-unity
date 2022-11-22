@@ -22,7 +22,11 @@ public class Timer : MonoBehaviour
 
         }
 
-
+        public void Win()
+        {
+            TimerText.color = Color.green;
+            enabled = false;
+        }
         void Update()
         {
             float t = Time.time - startTime;

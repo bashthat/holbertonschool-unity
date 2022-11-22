@@ -19,6 +19,8 @@ public class CameraRig : MonoBehaviour
     Vector3 rotationSmoothVelocity;
 
     private Vector3 _offset;
+    
+    public bool isInverted = false;
 
     private float _yaw;
     private float _pitch;
@@ -41,6 +43,8 @@ public class CameraRig : MonoBehaviour
         _yaw += Input.GetAxis("Mouse X") * _mouseSensivity;
         _pitch -= Input.GetAxis("Mouse Y") * _mouseSensivity;
         _pitch = Mathf.Clamp(_pitch, _picthMinMax.x, _picthMinMax.y);
+
+        
 
         currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(_pitch, _yaw), ref rotationSmoothVelocity, rotationSmoothTime);
         transform.eulerAngles = currentRotation;
