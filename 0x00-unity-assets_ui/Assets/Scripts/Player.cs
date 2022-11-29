@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -64,7 +66,8 @@ public class Player : MonoBehaviour
         }
         // Do something
     }
-
+    
+    
     void Update()
     {
         if (_movementMode == MovementMode.Strafe)
@@ -171,7 +174,7 @@ public class Player : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other)
-    {
+    {        
         Debug.Log("Triggered");
         if (other.gameObject.CompareTag("Respawn"))
         {

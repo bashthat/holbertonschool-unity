@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+
 
 public class WinTrigger : MonoBehaviour
 {
@@ -17,10 +21,35 @@ public class WinTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            winText.SetActive(true);
-            TimerText.SetActive(false);
-            player.SetActive(false);
+            if (other.gameObject.name == "Player")
+            {
+                winText.SetActive(true);
+                TimerText.SetActive(false);
+                player.SetActive(false);
+            }
         }
+
+        void YouWin()
+    {
+        SceneManager.LoadScene("Level02");
+    }
+
+    void OnTriggerWin(Collider other)
+    {
+        Debug.Log("You Win");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Win Canvas?!?");
+            if (other.gameObject.name == "Player")
+            {
+                winText.SetActive(true);
+                TimerText.SetActive(false);
+                player.SetActive(false);
+            }
+            
+        }
+    }
+
     }
     
     void Start()
@@ -31,7 +60,7 @@ public class WinTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                
+        
+
     }
 }
-
