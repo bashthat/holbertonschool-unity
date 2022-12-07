@@ -19,9 +19,9 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void Back()
+    public void Exit()
     {
-        SceneManager.LoadScene("MainMenu");
+        Application.Quit();
     }
 
     
@@ -35,6 +35,10 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         
 
     }

@@ -8,11 +8,7 @@ using UnityEngine.SceneManagement;
 public class OptionsMenu : MonoBehaviour
 {
 
-    public Slider volumeSlider;
-    public Slider sensitivitySlider;
-    public Toggle invertYToggle;
-    public Toggle fullscreenToggle;
-    // options menu
+     // options menu
     public void Options()
     {
         SceneManager.LoadScene("OptionsMenu");
@@ -21,7 +17,8 @@ public class OptionsMenu : MonoBehaviour
     public void Apply()
     {
         // apply volume
-        AudioListener.volume = volumeSlider.value;
+       
+        
         // apply sensitivity
         
         // apply invertY

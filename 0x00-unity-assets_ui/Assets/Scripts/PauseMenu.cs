@@ -7,25 +7,20 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
 
-    public static bool GameIsPaused = false;
-
-    public GameObject pauseMenuUI;
-
+    public bool GameIsPaused = false;
+    public GameObject pauseCanvas;
+    public PauseMenu pauseMenu;
     // Update is called once per frame
     
     
     void Resume()
     {
         Time.timeScale = 1;
-        pauseMenuUI.SetActive(false);
+        pauseCanvas.SetActive(false);
+        
     }
 
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-
-    public void Restart()
+        public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -47,10 +42,15 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
-        Time.timeScale = 0;
-        pauseMenuUI.SetActive(true);
+        pauseCanvas.SetActive(true);
+        
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    
     void escape()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -66,7 +66,8 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pauseMenuUI.SetActive(false);
+        pauseCanvas.SetActive(false);
+        Debug.Log("Pause Menu Loaded");
 
     }
 
@@ -75,8 +76,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Going Fishing");
-            pauseMenuUI.SetActive(!pauseMenuUI.gameObject.activeSelf);
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
     }
 }
