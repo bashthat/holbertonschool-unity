@@ -9,14 +9,15 @@ public class PauseMenu : MonoBehaviour
 
     public bool GameIsPaused = false;
     public GameObject pauseCanvas;
-    public PauseMenu pauseMenu;
+    
     // Update is called once per frame
     
     
-    void Resume()
+    public void Resume()
     {
         Time.timeScale = 1;
         pauseCanvas.SetActive(false);
+        GameIsPaused = false;
         
     }
 
@@ -35,14 +36,18 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("OptionsMenu");
     }
     
+    /**
     void OnEnable()
     {
         Pause();
     }
+    */
 
     void Pause()
     {
         pauseCanvas.SetActive(true);
+        Time.timeScale = 0;
+        GameIsPaused = true;
         
     }
 
@@ -64,25 +69,21 @@ public class PauseMenu : MonoBehaviour
         Resume();
     }
     // Start is called before the first frame update
-    void Start()
-    {
-        pauseCanvas.SetActive(false);
-        Debug.Log("Pause Menu Loaded");
-
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GameIsPaused)
+            if (GameIsPaused == false)
             {
-                Resume();
+                Pause();
+                Debug.Log("Paused");
             }
             else
             {
-                Pause();
+                Resume();
+                Debug.Log("Resumed");
+
             }
         }
     }
