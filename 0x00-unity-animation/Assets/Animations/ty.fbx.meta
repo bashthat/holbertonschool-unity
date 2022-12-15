@@ -1,12 +1,79 @@
 fileFormatVersion: 2
-guid: 580b30a8bbd96774ab98fa37a8f4d0f8
+guid: 40faa1dd9ba14754fb5b83261e759573
 ModelImporter:
-  serializedVersion: 21300
-  internalIDToNameTable:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
   - first:
-      74: -203655887218126122
-    second: mixamo.com
-  externalObjects: {}
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boy01_Hair_MAT
+    second: {fileID: 2100000, guid: 03d1020c2b2822b458eea7b8ca341d58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boy01_Hands_MAT
+    second: {fileID: 2100000, guid: c4f3a9ceab01a6c42a88eb913318fd61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boy01_Head_MAT
+    second: {fileID: 2100000, guid: 280da9acbb8fdd14485772f6875e13d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boy01_LowerBody_MAT
+    second: {fileID: 2100000, guid: caacaa3e8a2e36246851ac5a9b4629df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boy01_Scarf_MAT
+    second: {fileID: 2100000, guid: 9ddb0f781850c7744b0ccf28d1cd56bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boy01_Shoes_MAT
+    second: {fileID: 2100000, guid: 36be3bb23fb41044b8534eb3329c4176, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boy01_UpperBody_MAT
+    second: {fileID: 2100000, guid: 2679ee5455fccbe449ea7f80dde2bd39, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boy_Hair_diffuse
+    second: {fileID: 2800000, guid: 7421acb6b991bb9438099bff1d6848a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boy_Hands_diffuse
+    second: {fileID: 2800000, guid: e570c8751e14050499f4f963d6239690, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boy_Head_diffuse
+    second: {fileID: 2800000, guid: 3925c019b0a20ed45b8cb48251223e44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boy_LowerBody_diffuse
+    second: {fileID: 2800000, guid: 6c674f7704d38ea4fb404c27c0432533, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boy_Scarf_diffuse
+    second: {fileID: 2800000, guid: 6f063ccceecba074895a7775e0ff636a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boy_Shoes_diffuse
+    second: {fileID: 2800000, guid: 19f6d1f6052fe1c42b07b09a147c4e0f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boy_UpperBody_diffuse
+    second: {fileID: 2800000, guid: 8f0fb7fbbb0857f4fa80de39a351d2b3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -17,7 +84,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 1
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -27,7 +94,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -70,6 +137,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -79,12 +147,12 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips:
-  - a10af6149ca33524caba9a188c929d16
-  - 316a4bcfb7ce9ee48ac1bf8fb1fb041c
-  - 3ce94f91199a4304a91c6148744fb041
-  - 4896e4cd91da9b74d850ef057870efca
-  - 489cb1fee135e504d9b1aeea73d22037
-  - 8c7e8e1b7bb847a42b8c03ac61946851
+  - b5ef73eb705b7284dbdbe8e7ce4d65c7
+  - 59a862084710a7040a783ea165fc20f7
+  - d2a108e3115afed48ad63525e427cd62
+  - 08fb20439651ccd4ca2b362c56208ce7
+  - 97bb8ec845876b94d8c73f1185e23829
+  - b6b7dc8c1bc2fd046a7ff364de1caa92
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -100,14 +168,15 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
 
     public float jumpHeight = 1;
 
+    public Animator animator;
     private CharacterController _controller;
 
     private float _directionY;
@@ -52,6 +53,8 @@ public class Player : MonoBehaviour
     {
         _controller = GetComponent<CharacterController>();
         Respawn = transform.position;
+
+        animator = GetComponent<Animator>();
     }
     void Death()
     {
@@ -79,6 +82,11 @@ public class Player : MonoBehaviour
         {
             MovementPlatformer();
         }
+
+        animator.SetFloat("isRunning", _currentSpeed);
+        animator.SetBool("isGrounded", _controller.isGrounded);
+
+        
     }
 
     private void LateUpdate()
