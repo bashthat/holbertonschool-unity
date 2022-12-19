@@ -538,7 +538,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -980,7 +980,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1222,7 +1222,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1698,6 +1698,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 261313391}
+    - target: {fileID: 8891367036799412805, guid: b993e3d0dfa0ea644bfa990907e554cf, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b993e3d0dfa0ea644bfa990907e554cf, type: 3}
 --- !u!1001 &5527792524761457871
@@ -1707,6 +1711,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1523430081047360077, guid: 5d349f36b84ec8b42847b72329bb43ad, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2223141468886529883, guid: 5d349f36b84ec8b42847b72329bb43ad, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1755,6 +1763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuSFX
       objectReference: {fileID: 0}
+    - target: {fileID: 7495067617104436434, guid: 5d349f36b84ec8b42847b72329bb43ad, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d349f36b84ec8b42847b72329bb43ad, type: 3}
 --- !u!1001 &8228689916201892691
@@ -1764,6 +1776,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1186234799}
     m_Modifications:
+    - target: {fileID: 5972932605561774327, guid: be8b323b1d255854a8815014eb85821a, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8228689917443237768, guid: be8b323b1d255854a8815014eb85821a, type: 3}
       propertyPath: m_Name
       value: ExitButton
