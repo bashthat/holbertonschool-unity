@@ -390,17 +390,17 @@ PrefabInstance:
     - target: {fileID: 6904935772830103970, guid: d8e6fe0920ab78d419517e66f91e1581,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.645256
+      value: -20.289953
       objectReference: {fileID: 0}
     - target: {fileID: 6904935772830103970, guid: d8e6fe0920ab78d419517e66f91e1581,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4894309
+      value: 1.6908814
       objectReference: {fileID: 0}
     - target: {fileID: 6904935772830103970, guid: d8e6fe0920ab78d419517e66f91e1581,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.11
+      value: -19.110046
       objectReference: {fileID: 0}
     - target: {fileID: 6904935772830103970, guid: d8e6fe0920ab78d419517e66f91e1581,
         type: 3}
@@ -410,17 +410,17 @@ PrefabInstance:
     - target: {fileID: 6904935772830103970, guid: d8e6fe0920ab78d419517e66f91e1581,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.00000027614462
       objectReference: {fileID: 0}
     - target: {fileID: 6904935772830103970, guid: d8e6fe0920ab78d419517e66f91e1581,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.000001091511
       objectReference: {fileID: 0}
     - target: {fileID: 6904935772830103970, guid: d8e6fe0920ab78d419517e66f91e1581,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.00000011061154
       objectReference: {fileID: 0}
     - target: {fileID: 6904935772830103970, guid: d8e6fe0920ab78d419517e66f91e1581,
         type: 3}
@@ -484,7 +484,7 @@ PrefabInstance:
     - target: {fileID: 2614652887812408839, guid: 56f8e0aa5533553479401eb4e7778df3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2614652887812408839, guid: 56f8e0aa5533553479401eb4e7778df3,
         type: 3}
@@ -669,6 +669,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1041227691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6904935772830103971, guid: d8e6fe0920ab78d419517e66f91e1581,
+    type: 3}
+  m_PrefabInstance: {fileID: 572868026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1041227693
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041227691}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!43 &1084697367
 Mesh:
   m_ObjectHideFlags: 0
@@ -1007,7 +1029,7 @@ PrefabInstance:
     - target: {fileID: 6220098344091841613, guid: 9c007700523908842a3b71477473c683,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6220098344091841613, guid: 9c007700523908842a3b71477473c683,
         type: 3}
@@ -1022,7 +1044,7 @@ PrefabInstance:
     - target: {fileID: 6220098344091841613, guid: 9c007700523908842a3b71477473c683,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.873
+      value: -5.46
       objectReference: {fileID: 0}
     - target: {fileID: 6220098344091841613, guid: 9c007700523908842a3b71477473c683,
         type: 3}
@@ -1677,3 +1699,23 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &2066706315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4853948856423758193, guid: 59019786d56924d459c50984ef3dc502,
+    type: 3}
+  m_PrefabInstance: {fileID: 1693380966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2066706319
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066706315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3976180602811253290, guid: 55173d9b25d7a7649a272a0ae2fadab8, type: 3}
